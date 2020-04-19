@@ -1,6 +1,4 @@
-console.log("Client side javascript is loaded ");
 
-// const address = "Paris";
 const baseUrl = `http://localhost:3000/weather?address=`;
 
 const weatherForm = document.querySelector("form");
