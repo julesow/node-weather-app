@@ -1,5 +1,4 @@
-
-const baseUrl = `http://localhost:3000/weather?address=`;
+const baseUrl = `/weather?address=`;
 
 const weatherForm = document.querySelector("form");
 const searchEl = document.querySelector("input");
@@ -8,7 +7,6 @@ const messageTwo = document.querySelector("#message-2");
 
 messageOne.textContent = "";
 messageTwo.textContent = "";
-
 
 const getData = address => {
   const url = `${baseUrl}${address}`;
@@ -19,8 +17,8 @@ const getData = address => {
         console.log(data.error);
         messageOne.textContent = data.error;
       } else {
-        messageOne.textContent = data.location
-        messageTwo.textContent = data.forecast
+        messageOne.textContent = data.location;
+        messageTwo.textContent = data.forecast;
         console.log("location", data.location);
         console.log("forecast", data.forecast);
       }
